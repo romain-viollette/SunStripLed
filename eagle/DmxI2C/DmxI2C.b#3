@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1.5625" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="6.25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -138,10 +138,9 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="55" y2="0" width="0" layer="20"/>
-<wire x1="55" y1="0" x2="55" y2="69.52" width="0" layer="20"/>
-<wire x1="55" y1="69.52" x2="0" y2="69.52" width="0" layer="20"/>
-<wire x1="0" y1="69.52" x2="0" y2="0" width="0" layer="20"/>
-<rectangle x1="10.5965625" y1="35.163125" x2="29.845" y2="46.0771875" layer="29"/>
+<wire x1="55" y1="0" x2="55" y2="70.79" width="0" layer="20"/>
+<wire x1="55" y1="70.79" x2="0" y2="70.79" width="0" layer="20"/>
+<wire x1="0" y1="70.79" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="optocoupler">
@@ -1801,16 +1800,13 @@ Based on the following sources:&lt;p&gt;
 <clearance class="0" value="0.254"/>
 </class>
 <class number="1" name="+5V" width="0.8128" drill="0.4064">
-<clearance class="1" value="0.4064"/>
+<clearance class="1" value="0.254"/>
 </class>
 <class number="2" name="+15V" width="0.8128" drill="0.4064">
-<clearance class="2" value="0.4064"/>
+<clearance class="2" value="0.254"/>
 </class>
 <class number="3" name="screw" width="0" drill="0">
 <clearance class="3" value="0.762"/>
-</class>
-<class number="4" name="dmx" width="0.508" drill="0.254">
-<clearance class="4" value="0.4064"/>
 </class>
 </classes>
 <designrules>
@@ -2031,8 +2027,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MF" value="" x="-11.43" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="1792904" x="-11.43" y="109.22" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C3" library="rcl" package="C050-025X075" value="330nF" x="13.97" y="58.42"/>
-<element name="C4" library="rcl" package="C050-025X075" value="330nF" x="24.13" y="58.42" rot="R180"/>
+<element name="C3" library="rcl" package="C050-025X075" value="330nF" x="24.13" y="58.42"/>
+<element name="C4" library="rcl" package="C050-025X075" value="330nF" x="13.97" y="58.42" rot="R180"/>
 <element name="C10" library="rcl" package="E5-10,5" value="470µF" x="26.67" y="52.07"/>
 <element name="PWS1" library="traco-electronic" package="TMEXXXXS" value="TME_0505S" x="38.1" y="55.88">
 <attribute name="OC_NEWARK" value="51R5321" x="38.1" y="55.88" size="1.778" layer="27" display="off"/>
@@ -2049,22 +2045,22 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MF" value="" x="19.05" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="19.05" y="5.08" size="1.778" layer="27" display="off"/>
 </element>
-<element name="POWER_IN_15V" library="con-phoenix-508" package="MKDSN1,5/2-5,08" value="MKDSN1,5/2-5,08" x="13.97" y="64.77" rot="R180">
-<attribute name="OC_NEWARK" value="30M2397" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="MKDSN 1,5/2-5.08" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1792903" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="POWER_IN_15V" library="con-phoenix-508" package="MKDSN1,5/2-5,08" value="MKDSN1,5/2-5,08" x="24.13" y="64.77" rot="R180">
+<attribute name="OC_NEWARK" value="30M2397" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MKDSN 1,5/2-5.08" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1792903" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R6" library="rcl" package="R0805" value="300" x="19.05" y="49.53"/>
 <element name="LED5_POWER" library="led" package="LED5MM" value="" x="12.7" y="49.53" rot="R180"/>
 <element name="C15" library="rcl" package="C0805" value="100nF" x="19.685" y="23.8125" rot="R180"/>
 <element name="IC3" library="avr-6" package="TQFP32-08" value="MEGA48/88/168-AU" x="19.05" y="16.51" rot="R270"/>
 <element name="IC1" library="v-reg" package="78XXL" value="" x="25.4" y="40.64" rot="R90"/>
-<element name="POWER_OUT_5V" library="con-phoenix-508" package="MKDSN1,5/2-5,08" value="MKDSN1,5/2-5,08" x="24.13" y="64.77" rot="R180">
-<attribute name="OC_NEWARK" value="30M2397" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="MKDSN 1,5/2-5.08" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="1792903" x="24.13" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="POWER_OUT_5V" library="con-phoenix-508" package="MKDSN1,5/2-5,08" value="MKDSN1,5/2-5,08" x="13.97" y="64.77" rot="R180">
+<attribute name="OC_NEWARK" value="30M2397" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MKDSN 1,5/2-5.08" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1792903" x="13.97" y="64.77" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2118,8 +2114,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="SV1" pad="6"/>
 <polygon width="0.3048" layer="16" isolate="0.3048">
 <vertex x="1.27" y="1.27"/>
-<vertex x="1.27" y="68.58"/>
-<vertex x="34.29" y="68.58"/>
+<vertex x="1.27" y="69.85"/>
+<vertex x="34.29" y="69.85"/>
 <vertex x="34.29" y="1.27"/>
 </polygon>
 <contactref element="POWER_IN_15V" pad="1"/>
@@ -2164,8 +2160,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="29.21" y1="43.18" x2="36.83" y2="57.15" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="34.29" x2="29.21" y2="43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="20" y1="49.53" x2="29.21" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="58.42" x2="20" y2="49.53" width="0" layer="19" extent="1-1"/>
-<wire x1="26.6911" y1="64.745" x2="26.67" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="16.51" y1="58.42" x2="20" y2="49.53" width="0" layer="19" extent="1-1"/>
+<wire x1="16.5311" y1="64.745" x2="16.51" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="21.59" x2="34.29" y2="34.29" width="0" layer="19" extent="1-1"/>
 <wire x1="30.16" y1="17.78" x2="34.29" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="30.16" y1="15.24" x2="30.16" y2="17.78" width="0" layer="19" extent="1-1"/>
@@ -2202,8 +2198,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C10" pad="+"/>
 <contactref element="POWER_IN_15V" pad="2"/>
 <contactref element="IC1" pad="IN"/>
-<wire x1="11.43" y1="58.42" x2="11.4511" y2="64.745" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="52.07" x2="11.43" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="58.42" x2="21.6111" y2="64.745" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="52.07" x2="21.59" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="38.1" x2="24.13" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
@@ -2223,7 +2219,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="MOSI">
 <contactref element="SV1" pad="4"/>
 <contactref element="IC3" pad="15"/>
-<wire x1="19.05" y1="6.35" x2="14.7574" y2="14.51" width="0" layer="19" extent="1-1"/>
+<wire x1="14.7574" y1="14.51" x2="19.05" y2="6.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="SV1" pad="1"/>
@@ -2246,8 +2242,8 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.3048" layer="16" isolate="0.3048">
 <vertex x="53.34" y="1.27"/>
 <vertex x="41.91" y="1.27"/>
-<vertex x="41.91" y="68.58"/>
-<vertex x="53.34" y="68.58"/>
+<vertex x="41.91" y="69.85"/>
+<vertex x="53.34" y="69.85"/>
 </polygon>
 <contactref element="DMX" pad="1"/>
 <wire x1="41.9311" y1="64.745" x2="39.37" y2="57.15" width="0" layer="19" extent="1-1"/>
@@ -2267,10 +2263,10 @@ Please make sure your boards conform to these design rules.</description>
 <via x="2.69875" y="2.69875" extent="1-16" drill="0.7" diameter="5.08"/>
 </signal>
 <signal name="N$35" class="3">
-<via x="51.91125" y="66.83375" extent="1-16" drill="0.7" diameter="5.08"/>
+<via x="51.91125" y="68.10375" extent="1-16" drill="0.7" diameter="5.08"/>
 </signal>
 <signal name="N$36" class="3">
-<via x="2.69875" y="66.83375" extent="1-16" drill="0.7" diameter="5.08"/>
+<via x="2.69875" y="68.10375" extent="1-16" drill="0.7" diameter="5.08"/>
 </signal>
 <signal name="N$12">
 <contactref element="R9" pad="2"/>
@@ -2284,12 +2280,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.416" y1="29.21" x2="27.62" y2="33.02" width="0" layer="19" extent="1-1"/>
 <wire x1="17.05" y1="20.8026" x2="26.416" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$10" class="4">
+<signal name="N$10">
 <contactref element="IC2" pad="7"/>
 <contactref element="DMX" pad="3"/>
 <wire x1="41.91" y1="46.99" x2="31.7711" y2="64.745" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$11" class="4">
+<signal name="N$11">
 <contactref element="DMX" pad="2"/>
 <contactref element="IC2" pad="6"/>
 <wire x1="41.91" y1="44.45" x2="36.8511" y2="64.745" width="0" layer="19" extent="1-1"/>

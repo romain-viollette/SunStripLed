@@ -16155,13 +16155,10 @@ Source: 008-0260-0_E.pdf</description>
 <clearance class="0" value="0.254"/>
 </class>
 <class number="1" name="+5V" width="0.8128" drill="0.4064">
-<clearance class="1" value="0.254"/>
+<clearance class="1" value="0.4064"/>
 </class>
 <class number="2" name="+15V" width="0.8128" drill="0.4064">
-<clearance class="2" value="0.254"/>
-</class>
-<class number="3" name="screw" width="0" drill="0">
-<clearance class="3" value="0.762"/>
+<clearance class="2" value="0.4064"/>
 </class>
 </classes>
 <parts>
@@ -16548,7 +16545,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="93.98" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+15V" class="2">
+<net name="+15V" class="0">
 <segment>
 <pinref part="P+9" gate="1" pin="+15V"/>
 <wire x1="27.94" y1="132.08" x2="27.94" y2="127" width="0.1524" layer="91"/>
