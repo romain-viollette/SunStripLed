@@ -1,0 +1,29 @@
+Partlist
+
+Exported from interface.brd at 20/11/2013 14:10:03
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part       Value          Package   Library    Position (inch)       Orientation
+
+ATMEGA328P ATMEGA328P     TQFP32-08 avr-6      (0.98 0.43)           MR315
+C1         100nF          C0805     rcl        (1.20992126 0.57173228) MR45
+C3         100nF          C0805     rcl        (0.50362205 0.40362205) MR0
+C4         12-22pF        C0805     rcl        (1.4288189 0.36661417) MR0
+C5         12-22pF        C0805     rcl        (1.7284252 0.36464567) MR180
+DIS1                      HDSP-M    display-hp (0.63 0.43)           R0
+DIS2                      HDSP-M    display-hp (1.18 0.43)           R0
+DIS3                      HDSP-M    display-hp (1.73 0.43)           R0
+I2C-RXTX                  MA03-2    con-lstb   (0.18 0.68)           R0
+ISP        AVRISP-6       AVRISP    adafruit   (0.18 0.18)           R270
+LED1                      LED5MM    adafruit   (2.13 0.63)           R180
+LED2                      LED5MM    adafruit   (2.13 0.23)           R180
+QUARTZ     HC49SM-20      HC49UP    crystal    (1.68 0.53)           MR0
+R1         10k            R0805     rcl        (0.50480315 0.50637795) MR180
+R2         220            R0805     rcl        (0.67 0.25)           MR180
+R3         220            R0805     rcl        (1.18 0.23)           MR0
+R4         220            R0805     rcl        (1.73 0.23)           MR0
+R5         220            R0805     rcl        (2.08 0.365)          MR180
+R6         220            R0805     rcl        (2.08 0.495)          MR180

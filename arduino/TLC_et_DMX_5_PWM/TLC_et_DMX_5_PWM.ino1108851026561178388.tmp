@@ -1,0 +1,61 @@
+
+#include <DMXSerial.h>
+#define DMXModeSelectorPin 4
+
+#include <I2C.h>
+#include <PCA9685.h>
+PCA9685 LedDrv(0x43);
+
+#define PWM_FREQ  200
+
+
+void setup()
+{
+  LedDrv.begin();
+  LedDrv.setPWMFrequency(PWM_FREQ);
+
+  //turn everything off
+  LedDrv.PWM(0, 15, 0); 
+}
+
+void loop()
+{
+  if(true /*digitalRead(DMXModeSelectorPin)*/)
+  {
+    DMXSerial.maxChannel(DMXSERIAL_MAX);
+    DMXSerial.init(DMXController);
+    uint16_t value = 0;
+    while(1)
+    {
+      LedDrv.PWM12(0, 15, value);
+      
+      value++;
+      if (value < (uint16_t)) value = 0 ;
+      
+      //delayMicroseconds(10);
+    }//while(1)
+  }//if - DMXController
+  else
+  {
+    DMXSerial.init(DMXReceiver);
+    while(1)
+    {
+      while(!DMXSerial.isIDLE());
+      for(int chanel = 0; chanel<8; chanel++)
+      {
+        //ShiftPWM.SetOne(chanel, DMXSerial.read(chanel+1));
+      }  
+
+      //while(!DMXSerial.isIDLE());
+    }//while(1)
+  }//else - DMXReceiver
+}//loop()
+
+
+
+
+
+
+
+
+
