@@ -16166,9 +16166,6 @@ Source: 008-0260-0_E.pdf</description>
 <class number="4" name="dmx" width="0.508" drill="0.254">
 <clearance class="4" value="0.4064"/>
 </class>
-<class number="5" name="GND" width="0.8128" drill="0.4064">
-<clearance class="5" value="0.4064"/>
-</class>
 </classes>
 <parts>
 <part name="OK1" library="optocoupler" deviceset="6N137" device=""/>
@@ -16310,7 +16307,7 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="OK1" gate="A" pin="C"/>
 </segment>
 </net>
-<net name="+5V/2" class="1">
+<net name="+5V/2" class="0">
 <segment>
 <pinref part="OK1" gate="A" pin="A"/>
 <wire x1="142.24" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
@@ -16370,7 +16367,7 @@ Source: 008-0260-0_E.pdf</description>
 <junction x="152.4" y="63.5"/>
 </segment>
 </net>
-<net name="GND" class="5">
+<net name="GND" class="0">
 <segment>
 <pinref part="OK1" gate="A" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -16630,7 +16627,7 @@ Source: 008-0260-0_E.pdf</description>
 <label x="83.82" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND2" class="5">
+<net name="GND2" class="0">
 <segment>
 <pinref part="PWS1" gate="G$1" pin="A-"/>
 <pinref part="C13" gate="G$1" pin="2"/>
